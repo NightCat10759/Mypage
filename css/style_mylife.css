@@ -2,17 +2,18 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin:0;
     width: 100%;
     background-color: #6b6b6b;
     height:100%;
- }
+    margin:0;
+}
 #header1{
     margin: 0,auto;
     padding-top: 0;
     display:flex;/*預設橫列排版*/
 }
 header{
+    margin: 0,auto;
     display:flex;/*預設橫列排版*/
     justify-content:space-between;/*使nav 和 logo各自對其左右*/
     background-color: #8f8f8f;
@@ -24,7 +25,7 @@ header{
 }
 .icon h1 {
     align-items: center;
-    width: 40%;
+    width: 60%;
     margin: 0,auto;
     display: inline-block;
     color: #ffffff;
@@ -63,21 +64,21 @@ nav{
 }
 .navitem div{
     border-color:3px #000000 solid;
-    display: inline-block;
+    display: inline-flex;
 }
 .navitem{
     align-self: center;
     text-decoration: none;
     margin:0 auto;
     align-items: center;/*使內容置中*/
-}  
+}
 .navitem__text{
     font-size: 1.5vmin;
     color: #ffffff;
     text-decoration: none;
     transition: all 0.5s;
     position: relative; 
-}  
+} 
 .navitem__text:hover{
     background-color: rgba(80, 77, 77, 0.295);
     color: #000;
@@ -86,39 +87,43 @@ nav{
     color:rgba(212, 212, 212, 0.877);
     font-weight: 300;
 }
-
-#content_distrct1{
+#content_distrct3 div{
+    margin:0,auto;
+    vertical-align: center;/*就算各個div行數不同，也一律向上對其*/
+    padding-left: 2%;
+}
+#danceId{
+    padding-top: 7%;
+}
+#content_distrct3 h1{
+    margin: 0,auto;
+    color:#ffffff;
+}
+.dance{
+    display: inline-block;
+}
+#content_distrct3 h3{
+    margin: 0,auto;
+    color:#ffffff;
+}
+#content_distrct3{
+    background-image:url(../img/background02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80%;
     width: 100%;
-    height: 100%;
-   background-image:url(../img/background02.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   margin: 0px auto;
-   text-align: center;
-   border:1px solid #6b6b6b
-}
-#content_distrct1 div{
-    display:inline-block ;/*讓div並排*/
-    vertical-align: top;/*就算各個div行數不同，也一律向上對其*/   
-}
-.content_distrct1_h1{
-    border-left:1px #ffffff solid;
-    border-bottom:2px #ffffff solid;
-    font-family: Comic Sans MS,Courier New,sans-serif;
-    border-radius: 35px;
-    margin-top: 400px;
-    margin-bottom: 500px;
-    color: #faf9f9;
-    padding: 10px;
+    padding-bottom: 3%;
+    margin: 0px auto;
+    border:1px solid #6b6b6b;
+    text-align: center;
 }
 #content_distrctFinal div{
     display: inline-block;
     box-sizing: border-box;
 }
 #content_distrctFinal{
-
     width: 100%;
     height: 30%;
     background-color: #8f8f8f;
